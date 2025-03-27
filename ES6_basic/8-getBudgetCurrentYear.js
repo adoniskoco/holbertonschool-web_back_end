@@ -1,3 +1,4 @@
+/*eslint-disable*/
 function getCurrentYear() {
     const date = new Date();
     return date.getFullYear();
@@ -10,6 +11,6 @@ function getCurrentYear() {
       [`gdp-${year}`]: gdp,
       [`capita-${year}`]: capita,
     };
-
+  
     return budget;
   }
