@@ -1,11 +1,13 @@
 /*eslint-disable*/
-export default function updateStudentGradeByCity(students, city, newGrades) {
-  const updatedStudents = students.map((student) => {
-	const studentGrades = newGrades.find((grade) => grade.studentId === student.id);
-	if (studentGrades) {
-	  return { ...student, grade: studentGrades.grade };
-	}
-	return student;
+const updateStudentGradeByCity = (students, city, newGrade) => students
+  .filter((student) => student.location === city)
+  .map((item) => {
+    const newRecord = { ...item };
+
+    const newStudent = newGrade.find((student) => student.studentId === item.id);
+    if (newStudent) newRecord.grade = newStudent.grade;
+    else newRecord.grade = 'N/A';
+    return newRecord;
   });
-  return updatedStudents.filter((student) => student.location === city);
-}
+
+export default updateStudentGradeByCity;
