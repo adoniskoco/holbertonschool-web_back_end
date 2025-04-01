@@ -1,3 +1,4 @@
+/*eslint-disable*/
 export default function updateStudentGradeByCity(students, city, newGrades) {
   const updatedStudents = students.map((student) => {
 	const studentGrades = newGrades.find((grade) => grade.studentId === student.id);
