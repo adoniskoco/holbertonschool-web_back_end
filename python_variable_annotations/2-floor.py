@@ -1,20 +1,9 @@
 #!/usr/bin/env python3
-"""
-This module provides a function to compute
-the floor of a float.
-"""
+"""Returns the floor of the float"""
 
 
 def floor(n: float) -> int:
     """
-    Return the floor of the float n.
-
-    Args:
-        n (float): A floating point number
-        to be floored.
-
-    Returns:
-        int: The largest integer less
-        than or equal to n.
+    Returns the floor of the float
     """
-    return int(n // 1)
+    return int(n)
