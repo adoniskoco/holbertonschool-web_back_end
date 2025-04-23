@@ -36,4 +36,3 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
         return value * multiplier
 
     return multiplier_function
-	
