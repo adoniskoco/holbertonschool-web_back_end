@@ -18,3 +18,4 @@ def floor(n: float) -> int:
         than or equal to n.
     """
     return int(n // 1)
+	
